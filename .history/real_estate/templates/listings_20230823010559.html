@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% for listing in listings %}
+
+<a href="/listings/{{ listing.id }}/" class="px-3 py-2 bg-gray-100 rounded">
+  {{ listing.title }}
+</a>
+
+{% endfor %}
+
+{% endblock content %}  

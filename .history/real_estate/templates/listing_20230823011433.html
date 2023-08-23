@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{{ listing.title }}
+
+${{ listing.price }}
+
+{{ listing.address }}
+
+<a href="/listings/{{ listing.id }}/" class="px-3 py-2 bg-gray-100 rounded-sm">
+  {{ listing.title }}
+</a>
+
+{% endblock %}
+
+
